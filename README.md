@@ -3,6 +3,9 @@
 This is a MVP to showcase an AI Model that suggests wines based 
 on a food picture uploaded by the user. It was made with Streamlit.
 
+Showcase GIF (in portuguese):
+
+![showcase](./static/showcase.gif)
 
 ## How to run
 
