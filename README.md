@@ -14,7 +14,7 @@ It is pretty straightfoward.
 At your terminal, assuming that you are at the project's root directory, do:
 
 ```
-$ pip3 install streamlit
+$ pip3 install -r requirements.txt
 $ streamlit run app.py
 ```
 
