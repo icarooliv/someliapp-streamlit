@@ -1,3 +1,5 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
 altair==4.1.0
 appdirs==1.4.4
 argon2-cffi==20.1.0

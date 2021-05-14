@@ -48,6 +48,9 @@ FOODS_BY_CATEGORY = {
     "cheese_plate": "queijos_suaves",
     "bruschetta": "aperitivos",
     "breakfast_burrito": "aperitivos",
+    "chicken_wings": "aves",
+    "chicken_quesadilla": "aves",
+    "chicken_curry": "aves",
 }
 
 WINES_BY_CATEGORY = {
@@ -78,7 +81,7 @@ WINES_BY_CATEGORY = {
 
 def get_wines_by_food(food):
     if not food in FOODS_BY_CATEGORY:
-        return "Food not Found!"
+        return []
 
     category = CATEGORIES[FOODS_BY_CATEGORY[food]]
 
@@ -124,5 +127,8 @@ if uploaded_file is not None:
         Esses são os vinhos que nosso modelo sugere para combinar com sua receita!
         """
     )
+    if len(wines) > 0:
+        st.markdown(f"*{', '.join([str(elem) for elem in wines])}*")
+    else:
+        st.markdown(f"*Comida não encontrada!*")
 
-    st.markdown(f"*{', '.join([str(elem) for elem in wines])}*")
